@@ -19,6 +19,13 @@
 		76638C5829C301FE002AA82C /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76638C4629C301FE002AA82C /* Montserrat-ExtraLight.ttf */; };
 		76638C5929C301FE002AA82C /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76638C4729C301FE002AA82C /* Montserrat-SemiBold.ttf */; };
 		76638C5E29C31395002AA82C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76638C5D29C31395002AA82C /* Constant.swift */; };
+		76638C6729C34862002AA82C /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76638C6629C34862002AA82C /* LoginButtonView.swift */; };
+		76638C6929C34B72002AA82C /* PasswordLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76638C6829C34B72002AA82C /* PasswordLoginView.swift */; };
+		76638C6B29C34D36002AA82C /* UsernameLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76638C6A29C34D36002AA82C /* UsernameLoginView.swift */; };
+		76638C6D29C34DBF002AA82C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76638C6C29C34DBF002AA82C /* LoginView.swift */; };
+		76638C6F29C35275002AA82C /* UsernameRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76638C6E29C35275002AA82C /* UsernameRegister.swift */; };
+		76638C7129C3537D002AA82C /* EmailRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76638C7029C3537D002AA82C /* EmailRegister.swift */; };
+		769E98F129C3574800A6DA4C /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E98F029C3574800A6DA4C /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +43,13 @@
 		76638C4729C301FE002AA82C /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		76638C5D29C31395002AA82C /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		76638C5F29C31C94002AA82C /* Ecommerce-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Ecommerce-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		76638C6629C34862002AA82C /* LoginButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
+		76638C6829C34B72002AA82C /* PasswordLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordLoginView.swift; sourceTree = "<group>"; };
+		76638C6A29C34D36002AA82C /* UsernameLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameLoginView.swift; sourceTree = "<group>"; };
+		76638C6C29C34DBF002AA82C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		76638C6E29C35275002AA82C /* UsernameRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameRegister.swift; sourceTree = "<group>"; };
+		76638C7029C3537D002AA82C /* EmailRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRegister.swift; sourceTree = "<group>"; };
+		769E98F029C3574800A6DA4C /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +107,10 @@
 		76638C3429C2FCC3002AA82C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				76638C6329C347A2002AA82C /* Profile */,
+				76638C6229C34786002AA82C /* ItemView */,
+				76638C6129C3477C002AA82C /* HomeScreen */,
+				76638C6029C3476B002AA82C /* Login */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -131,6 +149,57 @@
 				76638C4729C301FE002AA82C /* Montserrat-SemiBold.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		76638C6029C3476B002AA82C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				76638C6529C347CC002AA82C /* Register */,
+				76638C6429C347BD002AA82C /* Login */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		76638C6129C3477C002AA82C /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		76638C6229C34786002AA82C /* ItemView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ItemView;
+			sourceTree = "<group>";
+		};
+		76638C6329C347A2002AA82C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		76638C6429C347BD002AA82C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				76638C6629C34862002AA82C /* LoginButtonView.swift */,
+				76638C6C29C34DBF002AA82C /* LoginView.swift */,
+				76638C6829C34B72002AA82C /* PasswordLoginView.swift */,
+				76638C6A29C34D36002AA82C /* UsernameLoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		76638C6529C347CC002AA82C /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				76638C6E29C35275002AA82C /* UsernameRegister.swift */,
+				76638C7029C3537D002AA82C /* EmailRegister.swift */,
+				769E98F029C3574800A6DA4C /* RegisterView.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,9 +279,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76638C6B29C34D36002AA82C /* UsernameLoginView.swift in Sources */,
+				769E98F129C3574800A6DA4C /* RegisterView.swift in Sources */,
+				76638C6D29C34DBF002AA82C /* LoginView.swift in Sources */,
+				76638C6729C34862002AA82C /* LoginButtonView.swift in Sources */,
 				76638C2929C2F9C9002AA82C /* ContentView.swift in Sources */,
 				76638C2729C2F9C9002AA82C /* Ecommerce_AppApp.swift in Sources */,
 				76638C5E29C31395002AA82C /* Constant.swift in Sources */,
+				76638C6F29C35275002AA82C /* UsernameRegister.swift in Sources */,
+				76638C7129C3537D002AA82C /* EmailRegister.swift in Sources */,
+				76638C6929C34B72002AA82C /* PasswordLoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
