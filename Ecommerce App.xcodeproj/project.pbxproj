@@ -17,6 +17,7 @@
 		7625325F29C4B8D4004BACB1 /* HeaderPage1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7625325E29C4B8D4004BACB1 /* HeaderPage1View.swift */; };
 		7625326129C4BE6C004BACB1 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7625326029C4BE6C004BACB1 /* CategoryItem.swift */; };
 		7625326329C4C2D7004BACB1 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7625326229C4C2D7004BACB1 /* CategoryModel.swift */; };
+		7625326A29C4C9B3004BACB1 /* LatestImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7625326929C4C9B3004BACB1 /* LatestImageView.swift */; };
 		76638C2729C2F9C9002AA82C /* Ecommerce_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76638C2629C2F9C9002AA82C /* Ecommerce_AppApp.swift */; };
 		76638C2929C2F9C9002AA82C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76638C2829C2F9C9002AA82C /* ContentView.swift */; };
 		76638C2B29C2F9CB002AA82C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76638C2A29C2F9CB002AA82C /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		7625325E29C4B8D4004BACB1 /* HeaderPage1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderPage1View.swift; sourceTree = "<group>"; };
 		7625326029C4BE6C004BACB1 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		7625326229C4C2D7004BACB1 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		7625326929C4C9B3004BACB1 /* LatestImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestImageView.swift; sourceTree = "<group>"; };
 		76638C2329C2F9C9002AA82C /* Ecommerce App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ecommerce App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76638C2629C2F9C9002AA82C /* Ecommerce_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ecommerce_AppApp.swift; sourceTree = "<group>"; };
 		76638C2829C2F9C9002AA82C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		7625326629C4C8E7004BACB1 /* Latest */ = {
 			isa = PBXGroup;
 			children = (
+				7625326929C4C9B3004BACB1 /* LatestImageView.swift */,
 			);
 			path = Latest;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				7625326329C4C2D7004BACB1 /* CategoryModel.swift in Sources */,
 				76638C6729C34862002AA82C /* LoginButtonView.swift in Sources */,
 				7625324E29C463A0004BACB1 /* ProfileView.swift in Sources */,
+				7625326A29C4C9B3004BACB1 /* LatestImageView.swift in Sources */,
 				769E98F329C35EA000A6DA4C /* SignInButtonView.swift in Sources */,
 				76638C2929C2F9C9002AA82C /* ContentView.swift in Sources */,
 				7625325029C463EB004BACB1 /* ProfileImgeView.swift in Sources */,

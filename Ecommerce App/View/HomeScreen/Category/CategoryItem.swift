@@ -36,8 +36,7 @@ struct CategoryItem: View {
                                     Image(category.image)
                                         .resizable()
                                         .scaledToFill()
-                                        .frame(width: 30, height: 30)
-                                      
+                                        .frame(width: 28, height: 28)
                                 }
                                 .foregroundColor(selectedItem == category.name ? grayFontColor : categoryItemColor)
                                 
