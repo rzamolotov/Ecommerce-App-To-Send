@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7625324E29C463A0004BACB1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7625324D29C463A0004BACB1 /* ProfileView.swift */; };
+		7625325029C463EB004BACB1 /* ProfileImgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7625324F29C463EB004BACB1 /* ProfileImgeView.swift */; };
 		76638C2729C2F9C9002AA82C /* Ecommerce_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76638C2629C2F9C9002AA82C /* Ecommerce_AppApp.swift */; };
 		76638C2929C2F9C9002AA82C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76638C2829C2F9C9002AA82C /* ContentView.swift */; };
 		76638C2B29C2F9CB002AA82C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76638C2A29C2F9CB002AA82C /* Assets.xcassets */; };
@@ -26,9 +28,12 @@
 		76638C6F29C35275002AA82C /* UsernameRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76638C6E29C35275002AA82C /* UsernameRegister.swift */; };
 		76638C7129C3537D002AA82C /* EmailRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76638C7029C3537D002AA82C /* EmailRegister.swift */; };
 		769E98F129C3574800A6DA4C /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E98F029C3574800A6DA4C /* RegisterView.swift */; };
+		769E98F329C35EA000A6DA4C /* SignInButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E98F229C35EA000A6DA4C /* SignInButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7625324D29C463A0004BACB1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7625324F29C463EB004BACB1 /* ProfileImgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImgeView.swift; sourceTree = "<group>"; };
 		76638C2329C2F9C9002AA82C /* Ecommerce App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ecommerce App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76638C2629C2F9C9002AA82C /* Ecommerce_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ecommerce_AppApp.swift; sourceTree = "<group>"; };
 		76638C2829C2F9C9002AA82C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +55,7 @@
 		76638C6E29C35275002AA82C /* UsernameRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameRegister.swift; sourceTree = "<group>"; };
 		76638C7029C3537D002AA82C /* EmailRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRegister.swift; sourceTree = "<group>"; };
 		769E98F029C3574800A6DA4C /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		769E98F229C35EA000A6DA4C /* SignInButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +183,8 @@
 		76638C6329C347A2002AA82C /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				7625324D29C463A0004BACB1 /* ProfileView.swift */,
+				7625324F29C463EB004BACB1 /* ProfileImgeView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -184,8 +192,8 @@
 		76638C6429C347BD002AA82C /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				76638C6629C34862002AA82C /* LoginButtonView.swift */,
 				76638C6C29C34DBF002AA82C /* LoginView.swift */,
+				76638C6629C34862002AA82C /* LoginButtonView.swift */,
 				76638C6829C34B72002AA82C /* PasswordLoginView.swift */,
 				76638C6A29C34D36002AA82C /* UsernameLoginView.swift */,
 			);
@@ -195,9 +203,10 @@
 		76638C6529C347CC002AA82C /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				769E98F029C3574800A6DA4C /* RegisterView.swift */,
 				76638C6E29C35275002AA82C /* UsernameRegister.swift */,
 				76638C7029C3537D002AA82C /* EmailRegister.swift */,
-				769E98F029C3574800A6DA4C /* RegisterView.swift */,
+				769E98F229C35EA000A6DA4C /* SignInButtonView.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -283,7 +292,10 @@
 				769E98F129C3574800A6DA4C /* RegisterView.swift in Sources */,
 				76638C6D29C34DBF002AA82C /* LoginView.swift in Sources */,
 				76638C6729C34862002AA82C /* LoginButtonView.swift in Sources */,
+				7625324E29C463A0004BACB1 /* ProfileView.swift in Sources */,
+				769E98F329C35EA000A6DA4C /* SignInButtonView.swift in Sources */,
 				76638C2929C2F9C9002AA82C /* ContentView.swift in Sources */,
+				7625325029C463EB004BACB1 /* ProfileImgeView.swift in Sources */,
 				76638C2729C2F9C9002AA82C /* Ecommerce_AppApp.swift in Sources */,
 				76638C5E29C31395002AA82C /* Constant.swift in Sources */,
 				76638C6F29C35275002AA82C /* UsernameRegister.swift in Sources */,
