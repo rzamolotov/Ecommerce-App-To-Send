@@ -11,14 +11,16 @@ struct UploadItem: View {
     var body: some View {
         ZStack{
             Rectangle()
-                .frame(width: 289, height: 46)
+                .frame(width: 290, height: 46)
                 .foregroundColor(violetColor)
                 .cornerRadius(15.0)
             HStack{
+                //TODO: заменить иконку
                 Image(systemName: "square.and.arrow.up")
                     .foregroundColor(.white)
                     .font(.custom(boldFont, size: 14))
                     .padding(.leading, -30)
+                
                 Text("Upload Item")
                     .font(.custom(boldFont, size: 14))
                     .foregroundColor(.white)
