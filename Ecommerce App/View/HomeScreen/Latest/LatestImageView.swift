@@ -12,21 +12,66 @@ struct LatestImageView: View {
         ZStack{
             Image("phoneImage")
                 .resizable()
-                .scaledToFit()
-                .frame(width: 114, height: 149)
-        //TODO: Добавить Latest
+                .scaledToFill()
             
-            HStack{
-                Button { } label: {
-                    ZStack {
-                        Circle()
-                            .foregroundColor(grayBackgroundColor)
-                        Image(systemName: "plus")
+            //TODO: Добавить Latest
+            
+            VStack {
+                Spacer()
+                HStack {
+                    VStack(alignment: .leading, spacing: 3) {
+                        ZStack{
+                            Rectangle()
+                                .frame(width: 35, height: 12)
+                                .cornerRadius(15)
+                                .foregroundColor(grayBackgroundColor)
+                                .opacity(0.5)
+                            Text("Phones")
+                                .font(.custom(mediumFont, size: 5))
+                        }
+                        Text("Samsung")
+                            .foregroundColor(.white)
+                            .font(.custom(boldFont, size: 10))
                     }
-                    .frame(width: 20, height: 20)
+                    Spacer()
                 }
+                .padding(.leading)
+                .padding(.top)
+                .padding(.bottom, -20)
+                
+                HStack{
+                    //TODO: add if else
+                    Text("console")
+                        .font(.custom(boldFont, size: 10))
+                        .foregroundColor(.white)
+                        .padding(.leading)
+                        .padding(.top, 15)
+                    Spacer()
+                }
+                
+                HStack {
+                    Text("$ 180,000")
+                        .foregroundColor(.white)
+                        .font(.custom(boldFont, size: 10))
+                        .padding(.leading)
+                        .padding(.top, 15)
+                    
+                    Spacer()
+                    
+                    Button { } label: {
+                        ZStack {
+                            Circle()
+                                .foregroundColor(grayBackgroundColor)
+                            Image(systemName: "plus")
+                        }
+                        .frame(width: 20, height: 20)
+                    }
+                    .padding()
+                }
+                .padding(.top, -35)
             }
         }
+        .frame(width: 114, height: 149)
     }
 }
 
