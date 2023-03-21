@@ -15,8 +15,8 @@ struct DetailViews: View {
         PaymentDetailModel(image: "creditCard", text: "Balance", rightImage: nil, rightText: "$ 1593"),
         PaymentDetailModel(image: "creditCard", text: "Trade history", rightImage: "chevrone", rightText: nil),
         PaymentDetailModel(image: "restore", text: "Restore purchase", rightImage: nil, rightText: nil),
-        PaymentDetailModel(image: "questionMark", text: "Help", rightImage: nil, rightText: nil),
-        PaymentDetailModel(image: "arrow", text: "Log out", rightImage: nil, rightText: nil)
+        PaymentDetailModel(image: "questionMark", text: "Help", rightImage: nil, rightText: nil)
+//        PaymentDetailModel(image: "arrow", text: "Log out", rightImage: nil, rightText: nil)
     ]
     
     var body: some View {

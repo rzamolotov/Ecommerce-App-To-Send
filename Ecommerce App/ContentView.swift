@@ -8,22 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var viewRouter: ViewRouter
+    @State var vm = ViewModel()
+    
     var body: some View {
-        NavigationView {
-            FlashSaleItemView()
-            ProfileImgeView()
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-                .font(.custom(extraLightFont, size: 20))
+        NavigationView{
+            if vm.authenticated == true {
+                Page1View()
+            } else {
+                switch viewRouter.currentPage {
+                case .login:
+                    LoginView()
+                case .landing:
+                    Page1View()
+                        .transition(.move(edge: .trailing))
+                }
+            }
         }
-        .padding()
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ViewRouter())
     }
 }

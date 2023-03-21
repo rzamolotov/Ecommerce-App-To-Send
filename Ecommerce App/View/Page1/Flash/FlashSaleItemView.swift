@@ -14,7 +14,7 @@ struct FlashSaleItemView: View {
     var body: some View {
         ScrollView(.horizontal){
             if let flashSale = network.dataFlash {
-                HStack(spacing: 10) {
+                HStack(spacing: 9) {
                     ForEach(flashSale) { flash in
                         ZStack{
                             AsyncImage(url: URL(string: flash.image_url)) { image in

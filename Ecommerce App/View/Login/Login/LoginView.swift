@@ -8,23 +8,16 @@
 import SwiftUI
 
 struct LoginView: View {
-    
-    @State var username: String = ""
-    @State var password: String = ""
-    @State var authSuccess: Bool = false
-    @State var authFailure: Bool = false
-    @State var skipAuth: Bool = false
+    @State var vm = ViewModel()
     
     var body: some View {
         VStack{
-
-            UsernameLoginView(username: $username)
+            UsernameLoginView(username: $vm.username)
                 .padding(.bottom, 32)
-            PasswordLoginView(password: $password)
+            PasswordLoginView(password: $vm.password)
                 .padding(.bottom, 100)
-            LoginButtonView(username: $username, password: $password, authSuccess: $authSuccess, authFailure: $authFailure)
- 
-            
+            LoginButtonView()
+  
         }
     }
 }

@@ -17,15 +17,19 @@ struct TabBarView: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .frame(height: 63)
+                .frame(height: 87)
                 .cornerRadius(15)
                 .foregroundColor(.white)
             HStack{
-                Image("home")
-                    .resizable()
-                    .frame(width: 17, height: 17)
-                    .padding(.leading, 45)
-                    .padding(.trailing, 45)
+                NavigationLink {
+                    Page1View()
+                } label: {
+                    Image("home")
+                        .resizable()
+                        .frame(width: 17, height: 17)
+                        .padding(.leading, 45)
+                        .padding(.trailing, 45)
+                }
                 Image("heart")
                     .resizable()
                     .frame(width: 17, height: 17)
@@ -38,10 +42,14 @@ struct TabBarView: View {
                     .resizable()
                     .frame(width: 17, height: 17)
                     .padding(.trailing, 45)
-                Image("person")
-                    .resizable()
-                    .frame(width: 17, height: 17)
-                    .padding(.trailing, 45)
+                NavigationLink {
+                    ProfileView()
+                } label: {
+                    Image("person")
+                        .resizable()
+                        .frame(width: 17, height: 17)
+                        .padding(.trailing, 45)
+                }
             }
         }
     }

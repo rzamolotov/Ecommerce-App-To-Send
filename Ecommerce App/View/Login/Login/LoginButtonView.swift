@@ -8,29 +8,18 @@
 import SwiftUI
 
 struct LoginButtonView: View {
-    
-    @Binding var username: String
-    @Binding var password: String
-    @Binding var authSuccess: Bool
-    @Binding var authFailure: Bool
-//    @EnvironmentObject var viewRouter: ViewRouter
-    
-    let validUserName = "123"
-    let validPassword = "123"
+    @State var vm = ViewModel()
+    @EnvironmentObject var viewRouter: ViewRouter
     
     var body: some View {
-        Button(action: { //consider disabling until details are entered
-            if (self.username == validUserName && self.password == validPassword) {
-                self.authSuccess = true
-                self.authFailure = false
-//                withAnimation(){
-//                    viewRouter.currentPage = .landing
-//                }
-            } else {
-                self.authFailure = true
-                self.authSuccess = false
+        Button {
+            vm.authenticated.toggle()
+            withAnimation() {
+                if vm.authenticated == true {
+                    viewRouter.currentPage = .landing
+                }
             }
-        }) {
+        } label: {
             ZStack{
                 Rectangle()
                     .frame(width: 289, height: 46)
@@ -48,6 +37,6 @@ struct LoginButtonView: View {
 
 struct LoginButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginButtonView(username: .constant("123"), password: .constant("123"), authSuccess: .constant(true), authFailure: .constant(false))
+        LoginButtonView()
     }
 }

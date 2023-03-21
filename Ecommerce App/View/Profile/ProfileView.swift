@@ -8,11 +8,8 @@
 import SwiftUI
 
 struct ProfileView: View {
-    
-    var paymentDetailModel: PaymentDetailModel
-    
+
     var body: some View {
-        NavigationView{
             VStack{
                 ScrollView{
                     Spacer()
@@ -20,18 +17,19 @@ struct ProfileView: View {
                     UploadItem()
                     DetailViews()
                         .padding([.top, .leading, .trailing])
+                    LogOutButton()
+                        .padding([.leading, .trailing])
                 }
                 .padding(.top, 30)
                 TabBarView()
             }
             .background(colorBackground)
-        }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
 struct ProfileView_Previews: PreviewProvider {
-    static var paymentDetailModel = PaymentDetailModel(image: "creditCard", text: "Trade store", rightImage: "chevrone", rightText: nil)
     static var previews: some View {
-        ProfileView(paymentDetailModel: paymentDetailModel)
+        ProfileView()
     }
 }

@@ -8,28 +8,11 @@
 import SwiftUI
 
 struct SignInButtonView: View {
-    
-    @Binding var username: String
-    @Binding var password: String
-    @Binding var authSuccess: Bool
-    @Binding var authFailure: Bool
-//    @EnvironmentObject var viewRouter: ViewRouter
-    
-    let validUserName = "123"
-    let validPassword = "123"
+    @State var vm = ViewModel()
     
     var body: some View {
-        Button(action: { //consider disabling until details are entered
-            if (self.username == validUserName && self.password == validPassword) {
-                self.authSuccess = true
-                self.authFailure = false
-//                withAnimation(){
-//                    viewRouter.currentPage = .landing
-//                }
-            } else {
-                self.authFailure = true
-                self.authSuccess = false
-            }
+        Button(action: {
+            vm.authenticate()
         }) {
             ZStack{
                 Rectangle()
@@ -48,6 +31,6 @@ struct SignInButtonView: View {
 
 struct SignInButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInButtonView(username: .constant("123"), password: .constant("123"), authSuccess: .constant(true), authFailure: .constant(false))
+        SignInButtonView()
     }
 }
