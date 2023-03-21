@@ -17,9 +17,15 @@ struct LatestItemView: View {
                 HStack(spacing: 10) {
                     ForEach(latest) { late in
                         ZStack{
-                            Image("phoneImage")
-                                .resizable()
-                                .scaledToFill()
+                            AsyncImage(url: URL(string: late.image_url)) { image in
+                                image
+                                    .resizable()
+                                    .frame(width: 114, height: 149)
+                                    .scaledToFill()
+                                    .cornerRadius(10)
+                            } placeholder: {
+                                ProgressView()
+                            }
                             VStack {
                                 Spacer()
                                 HStack {
@@ -30,10 +36,10 @@ struct LatestItemView: View {
                                                 .cornerRadius(15)
                                                 .foregroundColor(grayBackgroundColor)
                                                 .opacity(0.5)
-                                            Text("flashSale.category")
+                                            Text(late.category)
                                                 .font(.custom(mediumFont, size: 5))
                                         }
-                                        Text("flashSale.name")
+                                        Text(late.name)
                                             .foregroundColor(.white)
                                             .font(.custom(boldFont, size: 10))
                                     }
@@ -41,22 +47,13 @@ struct LatestItemView: View {
                                 }
                                 .padding(.leading)
                                 .padding(.top)
-                                .padding(.bottom, -20)
-                                
-                                HStack{
-                                    //TODO: add if else
-                                    Text("console")
-                                        .font(.custom(boldFont, size: 9))
-                                        .foregroundColor(.white)
-                                        .padding(.leading)
-                                        .padding(.top, 15)
-                                    Spacer()
-                                }
+                                .padding(.bottom, -3)
+                           
                                 
                                 HStack {
-                                    Text("$ 300 ")
+                                    Text("$ \(late.price)")
                                         .foregroundColor(.white)
-                                        .font(.custom(boldFont, size: 8))
+                                        .font(.custom(boldFont, size: 7))
                                         .padding(.leading)
                                         .padding(.top, 15)
                                     
@@ -75,7 +72,7 @@ struct LatestItemView: View {
                                 .padding(.top, -35)
                             }
                         }
-                        .frame(width: 121, height: 174)
+                        .frame(width: 114, height: 149)
                     }
                 }
             }
