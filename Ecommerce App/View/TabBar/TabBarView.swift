@@ -10,8 +10,9 @@ import SwiftUI
 struct TabBarView: View {
     
     //MARK: - Property
- 
-  
+    
+//    @StateObject var network = Network()
+    
     //MARK: - Body
     var body: some View {
         ZStack {
@@ -45,6 +46,7 @@ struct TabBarView: View {
         }
     }
 }
+
 
 struct TabBarView_Previews: PreviewProvider {
     static var previews: some View {
