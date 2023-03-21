@@ -12,19 +12,13 @@ struct LatestModel: Decodable {
 }
 struct Latest: Decodable, Identifiable {
     var id = UUID()
-    let category: String?
-    let name: String?
-    let price: Int?
-    let image_url: String?
+    let category: String
+    let name: String
+    let price: Int
+    let image_url: String
     
     enum CodingKeys: CodingKey {
-        case category
-        case name
-        case price
-        case image_url
+        case category, name, price, image_url
     }
 }
-
-
-
     

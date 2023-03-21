@@ -13,14 +13,13 @@ struct FlashSaleModel: Decodable {
 
 struct FlashSale: Decodable, Identifiable {
     var id = UUID()
-    let category: String?
-    let name: String?
-    let price: Double?
-    let discount: Int?
-    let image_url: String?
+    let category: String
+    let name: String
+    let price: Double
+    let discount: Int
+    let image_url: String
     
     enum CodingKeys: CodingKey {
         case category, name, price, discount, image_url
     }
 }
-
