@@ -8,6 +8,6 @@
 import Foundation
 import SwiftUI
 
-class ViewRouter: ObservableObject { //observable object class
-    @Published var currentPage: Page = .login //this gets observed by other views
+class ViewRouter: ObservableObject {
+    @Published var currentPage: Page = .login //основная страница для входа в приложение
 }

@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct Page1View: View {
+    @State var text = ""
     var body: some View {
         VStack{
             HeaderPage1View()
             ScrollView{
+                SearchItem(text: $text)
                 CategoryItem()
                 LatestHeaderView()
                 LatestItemView()
@@ -24,10 +26,12 @@ struct Page1View: View {
             TabBarView()
                 .padding([.leading, .trailing])
         }
+        
         .background(colorBackground)
         .navigationBarBackButtonHidden(true)
     }
 }
+
 
 struct Page1View_Previews: PreviewProvider {
     static var previews: some View {
