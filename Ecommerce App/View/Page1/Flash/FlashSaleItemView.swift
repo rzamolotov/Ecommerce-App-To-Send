@@ -110,6 +110,5 @@ struct FlashSaleItemView: View {
 struct FlashSaleItemView_Previews: PreviewProvider {
     static var previews: some View {
         FlashSaleItemView()
-        //            .environmentObject(Network())
     }
 }

@@ -21,7 +21,7 @@
 		7625326C29C59811004BACB1 /* LatestItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7625326B29C59811004BACB1 /* LatestItemView.swift */; };
 		762E37B629CCD36B006C8B47 /* Page2Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762E37B529CCD36B006C8B47 /* Page2Model.swift */; };
 		762E37B829CCD7A2006C8B47 /* NetworkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762E37B729CCD7A2006C8B47 /* NetworkItem.swift */; };
-		762E37BB29CCDC28006C8B47 /* PhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762E37BA29CCDC28006C8B47 /* PhotoItem.swift */; };
+		762E37BD29CCDE31006C8B47 /* PhotoCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762E37BC29CCDE31006C8B47 /* PhotoCarousel.swift */; };
 		764495C129C83FAC00BD1875 /* LatestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764495C029C83FAC00BD1875 /* LatestModel.swift */; };
 		764495C329C8512D00BD1875 /* FlashSaleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764495C229C8512D00BD1875 /* FlashSaleModel.swift */; };
 		764495C529C858AF00BD1875 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764495C429C858AF00BD1875 /* Network.swift */; };
@@ -53,9 +53,11 @@
 		76B8A09429CA022600B57300 /* BrandsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B8A09329CA022600B57300 /* BrandsHeader.swift */; };
 		76B8A09629CA0AEC00B57300 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B8A09529CA0AEC00B57300 /* AuthViewModel.swift */; };
 		76B8A09829CA110800B57300 /* LogOutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B8A09729CA110800B57300 /* LogOutButton.swift */; };
+		76C5D8C029CDF26F0099692D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C5D8BF29CDF26F0099692D /* ImagePicker.swift */; };
 		76DFA24F29CA4C2A009306B0 /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DFA24E29CA4C2A009306B0 /* SearchItem.swift */; };
 		76F54D2329CA4422004851BE /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F54D2229CA4422004851BE /* Page.swift */; };
 		76F54D2529CA445F004851BE /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F54D2429CA445F004851BE /* ViewRouter.swift */; };
+		76FFACB729CDB4ED00C01E47 /* WorkFileCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FFACB629CDB4ED00C01E47 /* WorkFileCarousel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,7 +75,7 @@
 		7625326B29C59811004BACB1 /* LatestItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestItemView.swift; sourceTree = "<group>"; };
 		762E37B529CCD36B006C8B47 /* Page2Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2Model.swift; sourceTree = "<group>"; };
 		762E37B729CCD7A2006C8B47 /* NetworkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkItem.swift; sourceTree = "<group>"; };
-		762E37BA29CCDC28006C8B47 /* PhotoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoItem.swift; sourceTree = "<group>"; };
+		762E37BC29CCDE31006C8B47 /* PhotoCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCarousel.swift; sourceTree = "<group>"; };
 		764495C029C83FAC00BD1875 /* LatestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestModel.swift; sourceTree = "<group>"; };
 		764495C229C8512D00BD1875 /* FlashSaleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSaleModel.swift; sourceTree = "<group>"; };
 		764495C429C858AF00BD1875 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
@@ -107,9 +109,11 @@
 		76B8A09329CA022600B57300 /* BrandsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsHeader.swift; sourceTree = "<group>"; };
 		76B8A09529CA0AEC00B57300 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		76B8A09729CA110800B57300 /* LogOutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutButton.swift; sourceTree = "<group>"; };
+		76C5D8BF29CDF26F0099692D /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		76DFA24E29CA4C2A009306B0 /* SearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
 		76F54D2229CA4422004851BE /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		76F54D2429CA445F004851BE /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		76FFACB629CDB4ED00C01E47 /* WorkFileCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkFileCarousel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +181,8 @@
 		762E37B929CCDC0A006C8B47 /* PhotoItem */ = {
 			isa = PBXGroup;
 			children = (
-				762E37BA29CCDC28006C8B47 /* PhotoItem.swift */,
+				762E37BC29CCDE31006C8B47 /* PhotoCarousel.swift */,
+				76FFACB629CDB4ED00C01E47 /* WorkFileCarousel.swift */,
 			);
 			path = PhotoItem;
 			sourceTree = "<group>";
@@ -255,6 +260,7 @@
 				762E37B729CCD7A2006C8B47 /* NetworkItem.swift */,
 				76B8A09529CA0AEC00B57300 /* AuthViewModel.swift */,
 				76F54D2429CA445F004851BE /* ViewRouter.swift */,
+				76C5D8BF29CDF26F0099692D /* ImagePicker.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -436,6 +442,7 @@
 				76B8A08C29C9FEDC00B57300 /* Page1View.swift in Sources */,
 				764495C529C858AF00BD1875 /* Network.swift in Sources */,
 				76638C6B29C34D36002AA82C /* UsernameLoginView.swift in Sources */,
+				76C5D8C029CDF26F0099692D /* ImagePicker.swift in Sources */,
 				769E98F129C3574800A6DA4C /* RegisterView.swift in Sources */,
 				764495C329C8512D00BD1875 /* FlashSaleModel.swift in Sources */,
 				7625325729C49C10004BACB1 /* TabBarView.swift in Sources */,
@@ -444,7 +451,6 @@
 				76B8A09429CA022600B57300 /* BrandsHeader.swift in Sources */,
 				7625326329C4C2D7004BACB1 /* CategoryModel.swift in Sources */,
 				76638C6729C34862002AA82C /* LoginButtonView.swift in Sources */,
-				762E37BB29CCDC28006C8B47 /* PhotoItem.swift in Sources */,
 				76B8A09229CA021100B57300 /* BrandsView.swift in Sources */,
 				76DFA24F29CA4C2A009306B0 /* SearchItem.swift in Sources */,
 				762E37B829CCD7A2006C8B47 /* NetworkItem.swift in Sources */,
@@ -452,6 +458,7 @@
 				76B8A09029CA015B00B57300 /* FlashSaleHeader.swift in Sources */,
 				7625324E29C463A0004BACB1 /* ProfileView.swift in Sources */,
 				76F54D2529CA445F004851BE /* ViewRouter.swift in Sources */,
+				762E37BD29CCDE31006C8B47 /* PhotoCarousel.swift in Sources */,
 				7625326A29C4C9B3004BACB1 /* FlashSaleItemView.swift in Sources */,
 				769E98F329C35EA000A6DA4C /* SignInButtonView.swift in Sources */,
 				764495C129C83FAC00BD1875 /* LatestModel.swift in Sources */,
@@ -463,6 +470,7 @@
 				762E37B629CCD36B006C8B47 /* Page2Model.swift in Sources */,
 				76F54D2329CA4422004851BE /* Page.swift in Sources */,
 				76638C6F29C35275002AA82C /* UsernameRegister.swift in Sources */,
+				76FFACB729CDB4ED00C01E47 /* WorkFileCarousel.swift in Sources */,
 				76638C7129C3537D002AA82C /* EmailRegister.swift in Sources */,
 				7625325929C4AB1C004BACB1 /* PaymentDetailModel.swift in Sources */,
 				7625325429C47D57004BACB1 /* PaymentDetailStack.swift in Sources */,
@@ -605,6 +613,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Ecommerce-App-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Ecommerce App needs access to you camera to take photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -635,6 +644,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Ecommerce-App-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Ecommerce App needs access to you camera to take photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

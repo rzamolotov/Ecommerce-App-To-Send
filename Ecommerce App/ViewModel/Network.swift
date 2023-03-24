@@ -15,7 +15,6 @@ class Network: ObservableObject {
     
     @Published var dataFlash = [FlashSale]()
     @Published var dataLatest = [Latest]()
-
     @Published var isLoading = true
     
     init() {
@@ -66,6 +65,4 @@ class Network: ObservableObject {
             }
         }.resume()
     }
-    
-   
 }
