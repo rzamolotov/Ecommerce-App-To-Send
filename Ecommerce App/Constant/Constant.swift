@@ -17,6 +17,7 @@ let violetColor: Color = Color("wiolet")
 let colorBackground: Color = Color("colorBackground")
 let categoryItemColor: Color = Color("categoryItemColor")
 let shareButtonColor: Color = Color("shareButtonColor")
+let addToCartPlaceholder: Color = Color("addToCartPlaceholder")
 
 //FONTS
 

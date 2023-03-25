@@ -42,7 +42,7 @@ struct PhotoCarousel: View {
                         Image(images[index].name)
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width: 80, height: 60)
+                            .frame(width: 67, height: 38)
                             .cornerRadius(10)
                             .scaleEffect(currentIndex == index ? 1.5 : 1)
                             .shadow(radius: currentIndex == index ? 10 : 0)

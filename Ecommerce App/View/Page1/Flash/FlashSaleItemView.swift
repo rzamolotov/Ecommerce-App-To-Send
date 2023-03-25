@@ -10,6 +10,7 @@ import SwiftUI
 struct FlashSaleItemView: View {
     
     @ObservedObject var network = Network()
+    @State var favorite: Bool = false
     
     var body: some View {
         ScrollView(.horizontal){
@@ -81,11 +82,13 @@ struct FlashSaleItemView: View {
                                         
                                         Spacer()
                                         
-                                        Button { } label: {
+                                        Button {
+                                            favorite.toggle()
+                                        } label: {
                                             ZStack {
                                                 Circle()
                                                     .foregroundColor(grayBackgroundColor)
-                                                Image(systemName: "heart")
+                                                Image(systemName: favorite == true ? "heart.fill" : "heart")
                                             }
                                             .frame(width: 28, height: 28)
                                         }

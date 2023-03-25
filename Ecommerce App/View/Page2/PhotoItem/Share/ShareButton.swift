@@ -23,7 +23,9 @@ struct ShareButton: View {
                 } label: {
                     Image(systemName: favorite == true ? "heart.fill" : "heart")
                 }
-                Text("-")
+                Image(systemName: "minus")
+                    .padding(.top, 10)
+                    .padding(.bottom, 10)
                 //TODO: не забыть заменить символ share
                 Button {
                     presentShareSheet(url: (URL(string: "https://hh.ru/resume/7e65eb23ff0b18736a0039ed1f386739615756") ?? URL(string:"https://hh.ru/resume/7e65eb23ff0b18736a0039ed1f386739615756"))!)
