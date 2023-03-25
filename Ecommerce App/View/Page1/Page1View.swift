@@ -22,11 +22,9 @@ struct Page1View: View {
                 BrandsView()
                 BrandsHeader()
             }
-            .padding([.leading, .trailing])
             TabBarView()
-                .padding([.leading, .trailing])
         }
-        
+        .padding([.leading, .trailing])
         .background(colorBackground)
         .navigationBarBackButtonHidden(true)
     }

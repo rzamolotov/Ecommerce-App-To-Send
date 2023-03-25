@@ -24,60 +24,48 @@ struct LatestItemView: View {
                         } placeholder: {
                             ProgressView()
                         }
-                        VStack {
-                            Spacer()
-                            HStack {
-                                VStack(alignment: .leading, spacing: 3) {
-                                    ZStack{
-                                        Rectangle()
-                                            .frame(width: 35, height: 12)
-                                            .cornerRadius(15)
-                                            .foregroundColor(grayBackgroundColor)
-                                            .opacity(0.5)
-                                        Text(late.category)
-                                            .font(.custom(mediumFont, size: 5))
-                                    }
+                        VStack(alignment: .leading, spacing: 3) {
+                            VStack(alignment: .leading){
+                                ZStack{
+                                    Rectangle()
+                                        .frame(width: 35, height: 12)
+                                        .cornerRadius(15)
+                                        .foregroundColor(grayBackgroundColor)
+                                        .opacity(0.5)
+                                    Text(late.category)
+                                        .font(.custom(mediumFont, size: 5))
+                                }
                                     Text(late.name)
                                         .foregroundColor(.white)
                                         .font(.custom(boldFont, size: 10))
-                                }
-                                Spacer()
-                            }
-                            .padding(.leading)
-                            .padding(.top)
-                            .padding(.bottom, -3)
-                            
-                            
-                            HStack {
-                                Text("$ \(late.price)")
-                                    .foregroundColor(.white)
-                                    .font(.custom(boldFont, size: 7))
-                                    .padding(.leading)
-                                    .padding(.top, 15)
-                                
-                                Spacer()
-                                
-                                Button { } label: {
-                                    ZStack {
-                                        Circle()
-                                            .foregroundColor(grayBackgroundColor)
-                                        Image(systemName: "plus")
+                                    
+                                HStack{
+                                    Text("$ \(late.price)")
+                                        .foregroundColor(.white)
+                                        .font(.custom(boldFont, size: 8))
+                                   
+                                    Spacer()
+                                    Button { } label: {
+                                        ZStack {
+                                            Circle()
+                                                .foregroundColor(grayBackgroundColor)
+                                            Image(systemName: "plus")
+                                        }
+                                        .frame(width: 20, height: 20)
+                                        
                                     }
-                                    .frame(width: 20, height: 20)
                                 }
-                                .padding()
                             }
-                            .padding(.top, -35)
+                            .position(x: 45, y: 110)
+                            .padding(.leading)
+                          
                         }
-                    }
-                    .frame(width: 114, height: 149)
+                    }.frame(width: 114, height: 149)
                 }
             }
         }
     }
 }
-
-
 struct FlashSaleItemView1_Previews: PreviewProvider {
     static var previews: some View {
         LatestItemView()

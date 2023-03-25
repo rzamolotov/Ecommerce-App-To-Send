@@ -13,36 +13,39 @@ struct FlashSaleItemView: View {
     
     var body: some View {
         ScrollView(.horizontal){
-            if let flashSale = network.dataFlash {
-                HStack(spacing: 9) {
-                    ForEach(flashSale) { flash in
-                        ZStack{
-                            AsyncImage(url: URL(string: flash.image_url)) { image in
-                                image
-                                    .resizable()
-                                    .frame(width: 174, height: 221)
-                                    .scaledToFill()
-                                    .cornerRadius(10)
-                            } placeholder: {
-                                ProgressView()
-                            }
-                            
-                            VStack(alignment: .leading) {
-                                HStack{
-                                    Image("face")
-                                    Spacer()
-                                    ZStack{
-                                        Rectangle()
-                                            .frame(width: 49, height: 18)
-                                            .cornerRadius(15)
-                                            .foregroundColor(.red)
-                                        Text("\(flash.discount)% off")
-                                            .font(.custom(mediumFont, size: 7))
-                                            .foregroundColor(.white)
-                                            .shadow(radius: 1)
-                                    }
-                                }//: HStack face+sale
+            HStack(spacing: 9) {
+                ForEach(network.dataFlash) { flash in
+                    ZStack{
+                        AsyncImage(url: URL(string: flash.image_url)) { image in
+                            image
+                                .resizable()
+                                .frame(width: 174, height: 221)
+                                .scaledToFill()
+                                .cornerRadius(10)
+                        } placeholder: {
+                            ProgressView()
+                        }
+                        
+                        VStack(alignment: .leading) {
+                            HStack{
+                                Image("face")
                                 Spacer()
+                                ZStack{
+                                    Rectangle()
+                                        .frame(width: 49, height: 18)
+                                        .cornerRadius(15)
+                                        .foregroundColor(.red)
+                                    Text("\(flash.discount)% off")
+                                        .font(.custom(mediumFont, size: 7))
+                                        .foregroundColor(.white)
+                                        .shadow(radius: 1)
+                                }
+                            }
+                            .padding()
+                            .position(x: 90, y: 20)
+                            //: HStack face+sale
+                            Spacer()
+                            VStack(alignment: .leading) {
                                 ZStack{
                                     Rectangle()
                                         .frame(width: 50, height: 17)
@@ -78,7 +81,7 @@ struct FlashSaleItemView: View {
                                         ZStack {
                                             Circle()
                                                 .foregroundColor(grayBackgroundColor)
-                                            Image("heart1")
+                                            Image(systemName: "heart")
                                         }
                                         .frame(width: 28, height: 28)
                                     }
@@ -92,16 +95,13 @@ struct FlashSaleItemView: View {
                                         .frame(width: 35, height: 35)
                                     }
                                 }//: HStack price/plus/heart
-                            }//: VStack
-                            .padding(.leading, 10)
-                            .padding(.trailing, 10)
-                            .padding(.bottom, 5)
-                            .padding(.top, 8)
-                        }//:ZStack
+                            }
+                            .padding([.leading, .trailing])
+                            .padding(.bottom, 7)
+                        }//: VStack
                         .frame(width: 174, height: 221)
-                    }
-                    
-                }
+                    }//:ZStack
+                }.padding(.leading, 5)
             }
         }
     }

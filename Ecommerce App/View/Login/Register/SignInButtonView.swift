@@ -9,10 +9,11 @@ import SwiftUI
 
 struct SignInButtonView: View {
     @State var vm = ViewModel()
+    @EnvironmentObject var viewRouter: ViewRouter
     
     var body: some View {
         Button(action: {
-            vm.authenticate()
+            viewRouter.currentPage = .landing
         }) {
             ZStack{
                 Rectangle()

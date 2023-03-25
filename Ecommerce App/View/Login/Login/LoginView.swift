@@ -17,8 +17,10 @@ struct LoginView: View {
             PasswordLoginView(password: $vm.password)
                 .padding(.bottom, 100)
             LoginButtonView()
-  
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(colorBackground)
+        
     }
 }
 

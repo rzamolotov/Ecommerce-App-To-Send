@@ -37,11 +37,7 @@ struct ProfileImgeView: View {
         }
         .padding(.horizontal, 20)
         .sheet(isPresented: $showSheet) {
-            // Pick an image from the photo library:
             ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
-            
-            //  If you wish to take a photo from camera instead:
-            // ImagePicker(sourceType: .camera, selectedImage: self.$image)
         }
         
         Text("Satria Adhi Pranada")

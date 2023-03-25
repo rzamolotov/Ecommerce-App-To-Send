@@ -18,7 +18,7 @@ struct ContentView: View {
             } else {
                 switch viewRouter.currentPage {
                 case .login:
-                    LoginView()
+                    RegisterView()
                 case .landing:
                     Page1View()
                         .transition(.move(edge: .trailing))

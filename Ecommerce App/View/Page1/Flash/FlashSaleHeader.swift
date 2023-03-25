@@ -13,16 +13,19 @@ struct FlashSaleHeader: View {
             Text("Flash sale")
                 .font(.custom(mediumFont, size: 20))
                 .foregroundColor(blackColor)
+
             Spacer()
             NavigationLink("view all") {
                 EmptyView()
             }
             .font(.custom(lightFont, size: 15))
             .foregroundColor(grayFontColor)
+
         }
         
     }
 }
+
 
 struct FlashSaleHeader_Previews: PreviewProvider {
     static var previews: some View {

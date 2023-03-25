@@ -17,9 +17,9 @@ class Network: ObservableObject {
     @Published var dataLatest = [Latest]()
     @Published var isLoading = true
     
+    
     init() {
         self.fetchFlash()
-        
     }
     
     func fetchFlash(){

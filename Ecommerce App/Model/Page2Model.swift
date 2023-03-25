@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Page2Model: Decodable, Identifiable {
     var id = UUID()
@@ -20,4 +21,9 @@ struct Page2Model: Decodable, Identifiable {
     enum CodingKeys: CodingKey {
         case name, description, rating, number_of_reviews, price, colors, image_urls
     }
+}
+
+struct ImageModel: Identifiable {
+    var id = UUID().uuidString
+    var name: String
 }
