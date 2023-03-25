@@ -16,6 +16,7 @@ let grayBackgroundColor: Color = Color("gray")
 let violetColor: Color = Color("wiolet")
 let colorBackground: Color = Color("colorBackground")
 let categoryItemColor: Color = Color("categoryItemColor")
+let shareButtonColor: Color = Color("shareButtonColor")
 
 //FONTS
 

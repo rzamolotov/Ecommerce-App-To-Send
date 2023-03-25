@@ -30,17 +30,17 @@ struct CarouselSlider<Content: View, T: Identifiable>: View {
     var body: some View {
         GeometryReader { proxy in
             //setting correct width for carousel
-            let width = proxy.size.width - (trailingSpace - spacing)
-            let adjustMentWidth = (trailingSpace / 2) - spacing
+            let width = proxy.size.width
+            let adjustmentWidth = (trailingSpace / 2) - spacing
             
             HStack(spacing: spacing) {
                 ForEach(list) {item in
                     content(item)
-                        .frame(width: proxy.size.width - trailingSpace)
+                        .frame(width: (proxy.size.width), height: 360)
                 }
             }
             .padding(.horizontal, spacing)
-            .offset(x: (CGFloat(currentIndex) * -width) + (currentIndex != 0 ? adjustMentWidth : 0) + offset)
+            .offset(x: (CGFloat(currentIndex) * -width) + (currentIndex != 0 ? adjustmentWidth : 0) + offset)
             .gesture(
                 DragGesture()
                     .updating($offset, body: { value, out, _ in
@@ -80,6 +80,6 @@ struct CarouselSlider<Content: View, T: Identifiable>: View {
 
 struct CarouselSlider_Previews: PreviewProvider {
     static var previews: some View {
-        ItemView()
+        PhotoCarousel()
     }
 }
