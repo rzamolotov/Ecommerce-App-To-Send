@@ -8,8 +8,8 @@
 import Foundation
 import SwiftUI
 
-struct Page2Model: Codable {
-    
+struct Page2Model: Decodable, Identifiable {
+    var id = UUID()
     let name: String
     let description: String
     let rating: Double

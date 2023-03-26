@@ -18,17 +18,18 @@ struct TextViewSlider1: View {
             VStack (spacing: 5) {
                 ZStack {
                     HStack {
-                        CarouselSlider(index: $currentIndex, items: images) { image in
-                            GeometryReader{ proxy in
-                                Image(image.name)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                                    .frame(width: 320)
-                                    .cornerRadius(12)
-                            }
-                        } .onAppear {
-                            for index in 1...itemModel.image_urls.count{
-                                images.append(ImageModel(name: "sneaker\(index)"))
+                        ForEach(itemModel.image_urls, id: \.self) { image in
+                            TestViewSlider2(index: $currentIndex, items: images) { image in
+                                GeometryReader{ proxy in
+                                    AsyncImage(url: URL(string: "\(image)"))
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(width: 320)
+                                        .cornerRadius(12)
+                                }
+                            } .onAppear {
+                                for index in 1...itemModel.image_urls.count{
+                                    images.append(ImageModel(name: "sneaker\(index)"))
+                                }
                             }
                         }
                         ShareButton()
