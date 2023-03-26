@@ -29,7 +29,9 @@ struct AddToCartButton: View {
                         .padding(.bottom, 12)
                     HStack{
                         Button {
-                            self.counter -= 1
+                            if counter > 1 {
+                                counter -= 1
+                            }
                         } label: {
                             ZStack{
                                 Rectangle()
@@ -41,7 +43,9 @@ struct AddToCartButton: View {
                             }
                         }
                         Button {
-                            self.counter += 1
+                            if counter < 10 {
+                                counter += 1
+                            }
                         } label: {
                             ZStack{
                                 Rectangle()

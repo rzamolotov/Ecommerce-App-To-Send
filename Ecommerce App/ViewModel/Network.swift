@@ -35,11 +35,12 @@ class Network: ObservableObject {
             let result = try? JSONDecoder().decode(FlashSaleModel.self, from: data)
             
             if let result = result {
-                self.isLoading = false
                 DispatchQueue.main.async {
+                    self.isLoading = false
                     self.dataFlash = result.flash_sale
                     self.fetchLatest()
                     print(result)
+                    
                 }
             }
         }.resume()
@@ -57,8 +58,8 @@ class Network: ObservableObject {
             let result = try? JSONDecoder().decode(LatestModel.self, from: data)
             
             if let result = result {
-                self.isLoading = false
                 DispatchQueue.main.async {
+                    self.isLoading = false
                     self.dataLatest = result.latest
                     print(result)
                 }

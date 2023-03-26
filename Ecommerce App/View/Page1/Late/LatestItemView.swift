@@ -39,6 +39,7 @@ struct LatestItemView: View {
                                             .opacity(0.5)
                                         Text(late.category)
                                             .font(.custom(mediumFont, size: 5))
+                                            .foregroundColor(blackColor)
                                     }
                                         Text(late.name)
                                             .foregroundColor(.white)
