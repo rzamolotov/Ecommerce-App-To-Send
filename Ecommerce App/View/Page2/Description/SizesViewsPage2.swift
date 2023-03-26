@@ -8,18 +8,21 @@
 import SwiftUI
 
 struct SizesViewsPage2: View {
+    @StateObject var viewModel = NetworkItem()
     var body: some View {
-        HStack{
-            Image(systemName: "star")
-                .foregroundColor(.yellow)
-                .font(.custom(mediumFont, size: 16))
-            Text("4.3")
-                .font(.custom(boldFont, size: 14))
-                .foregroundColor(blackColor)
-            Text("(4000 rewiews)")
-                .font(.custom(lightFont, size: 13))
-                .foregroundColor(grayFontColor)
-            Spacer()
+        if let itemModel = viewModel.data {
+            HStack{
+                Image(systemName: "star")
+                    .foregroundColor(.yellow)
+                    .font(.custom(mediumFont, size: 16))
+                Text("\(itemModel.rating, specifier: "%.2f")")
+                    .font(.custom(boldFont, size: 14))
+                    .foregroundColor(blackColor)
+                Text("(\(itemModel.number_of_reviews) reviews)")
+                    .font(.custom(lightFont, size: 13))
+                    .foregroundColor(grayFontColor)
+                Spacer()
+            }
         }
     }
 }

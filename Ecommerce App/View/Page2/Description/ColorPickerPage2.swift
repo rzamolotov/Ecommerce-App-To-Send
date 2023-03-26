@@ -9,39 +9,37 @@ import SwiftUI
 
 struct ColorPickerPage2: View {
     
-    let colors = ["#ffffff", "#b5b5b5", "#000000"]
-
+    @StateObject var viewModel = NetworkItem()
     
     var body: some View {
-        HStack {
-            VStack(alignment: .leading) {
-                Text("Color:")
-                    .foregroundColor(grayFontColor)
-                    .font(.custom(lightFont, size: 14))
-                HStack{
-                    ForEach(colors, id: \.self) { itemcolor in
-                        Button {
-                            
-                        } label: {
-                            ZStack{
-                                Rectangle()
-                                    .frame(width: 32, height: 24)
-                                    .cornerRadius(10)
-                                    .foregroundColor(Color(hex: itemcolor))
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 10)
-                                            .stroke(grayFontColor, lineWidth: 1)
-                                    )
-                               
-                                    .foregroundColor(violetColor)
-                                
-                                
+        if let itemModel = viewModel.data {
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("Color:")
+                        .foregroundColor(grayFontColor)
+                        .font(.custom(lightFont, size: 14))
+                    HStack{
+                        ForEach(itemModel.colors, id: \.self) { itemcolor in
+                            Button {
+                                //TODO: Create toggle
+                            } label: {
+                                ZStack{
+                                    Rectangle()
+                                        .frame(width: 32, height: 24)
+                                        .cornerRadius(10)
+                                        .foregroundColor(Color(hex: itemcolor))
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 10)
+                                                .stroke(grayFontColor, lineWidth: 1)
+                                        )
+                                        .foregroundColor(violetColor)
+                                }
                             }
                         }
                     }
                 }
+                Spacer()
             }
-        Spacer()
         }
     }
 }
@@ -61,7 +59,7 @@ extension Color {
         default:
             (a, r, g, b) = (1, 1, 1, 0)
         }
-
+        
         self.init(
             .sRGB,
             red: Double(r) / 255,

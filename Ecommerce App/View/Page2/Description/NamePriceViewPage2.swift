@@ -8,18 +8,23 @@
 import SwiftUI
 
 struct NamePriceViewPage2: View {
+    @StateObject var viewModel = NetworkItem()
     var body: some View {
-        HStack{
-            Text("Reebok Classic")
-                .font(.custom(boldFont, size: 18))
-                .foregroundColor(blackColor)
-            Spacer()
-            Text("$ 24.00")
-                .font(.custom(boldFont, size: 12))
-                .foregroundColor(blackColor)
+        
+        if let itemModel = viewModel.data {
+            HStack{
+                Text("\(itemModel.name)")
+                    .font(.custom(boldFont, size: 18))
+                    .foregroundColor(blackColor)
+                Spacer()
+                Text("$ \(itemModel.price).00")
+                    .font(.custom(boldFont, size: 12))
+                    .foregroundColor(blackColor)
+            }
         }
     }
 }
+
 
 struct NamePriceViewPage2_Previews: PreviewProvider {
     static var previews: some View {

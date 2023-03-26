@@ -13,8 +13,9 @@ struct LoginButtonView: View {
     
     var body: some View {
         Button {
-            vm.authenticated.toggle()
+            
             withAnimation() {
+                vm.authenticated.toggle()
                 if vm.authenticated == true {
                     viewRouter.currentPage = .landing
                 }

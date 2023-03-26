@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct DescriptionPage2: View {
+    @StateObject var viewModel = NetworkItem()
+    
     var body: some View {
-        HStack{
-            Text("Shoes inspired by 80s running shoes are still relevant today")
-        }
-        .foregroundColor(grayFontColor)
+        if let itemModel = viewModel.data {
+            HStack{
+                Text(itemModel.description)
+            }
+            .foregroundColor(grayFontColor)
         .font(.custom(lightFont, size: 12))
+        }
     }
 }
 
