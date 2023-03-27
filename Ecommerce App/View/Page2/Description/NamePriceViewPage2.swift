@@ -29,5 +29,6 @@ struct NamePriceViewPage2: View {
 struct NamePriceViewPage2_Previews: PreviewProvider {
     static var previews: some View {
         NamePriceViewPage2()
+            .environmentObject(NetworkItem())
     }
 }

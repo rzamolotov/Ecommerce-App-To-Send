@@ -9,14 +9,29 @@ import SwiftUI
 
 struct PasswordLoginView: View {
     @Binding var password: String
+    @State private var isSecureField: Bool = true
     
     var body: some View {
-        SecureField("Password", text: $password)
-            .font(.custom(lightFont, size: 14))
-            .padding()
-            .background(grayBackgroundColor)
-            .frame(width: 289, height: 29)
-            .cornerRadius(15.0)
+        HStack{
+            if isSecureField {
+                SecureField("Password", text: $password)
+            } else {
+                TextField(password, text: $password)
+            }
+        }
+        .font(.custom(lightFont, size: 14))
+        .padding()
+        .background(grayBackgroundColor)
+        .frame(width: 289, height: 29)
+        .cornerRadius(15.0)
+        .overlay(alignment: .trailing) {
+            Image(systemName: isSecureField ? "eye.slash" : "eye")
+                .foregroundColor(blackColor)
+                .onTapGesture {
+                    isSecureField.toggle()
+                }
+        }
+        
     }
 }
 

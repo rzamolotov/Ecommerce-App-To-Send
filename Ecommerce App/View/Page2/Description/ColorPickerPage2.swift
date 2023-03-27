@@ -73,5 +73,6 @@ extension Color {
 struct ColorPickerPage2_Previews: PreviewProvider {
     static var previews: some View {
         ColorPickerPage2()
+            .environmentObject(NetworkItem())
     }
 }

@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct UsernameRegister: View {
+    @StateObject var vm = ViewModel()
     @Binding var firstName: String
     @Binding var lastName: String
+    @State private var showingAlert = false
     
     var body: some View {
         VStack{
@@ -20,6 +22,7 @@ struct UsernameRegister: View {
                 .frame(width: 289, height: 29)
                 .cornerRadius(15.0)
                 .padding(.bottom, 30)
+            
             TextField("Last name", text: $lastName)
                 .font(.custom(lightFont, size: 14))
                 .padding()

@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct Page1View: View {
-    @State var text = ""
+    
+    @ObservedObject var searchVM = SearchViewModel()
+    
     var body: some View {
         VStack{
             HeaderPage1View()
             ScrollView{
-                SearchItem(text: $text)
+                SearchItem(searchText: $searchVM.searchText)
                 CategoryItem()
                 LatestHeaderView()
                 LatestItemView()

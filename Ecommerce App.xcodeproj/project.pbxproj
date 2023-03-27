@@ -43,7 +43,6 @@
 		76638C6D29C34DBF002AA82C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76638C6C29C34DBF002AA82C /* LoginView.swift */; };
 		76638C6F29C35275002AA82C /* UsernameRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76638C6E29C35275002AA82C /* UsernameRegister.swift */; };
 		76638C7129C3537D002AA82C /* EmailRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76638C7029C3537D002AA82C /* EmailRegister.swift */; };
-		7666FF1529CB4D8E00FEF6C9 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7666FF1429CB4D8E00FEF6C9 /* SearchView.swift */; };
 		769E98F129C3574800A6DA4C /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E98F029C3574800A6DA4C /* RegisterView.swift */; };
 		769E98F329C35EA000A6DA4C /* SignInButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E98F229C35EA000A6DA4C /* SignInButtonView.swift */; };
 		76B8A08C29C9FEDC00B57300 /* Page1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B8A08B29C9FEDC00B57300 /* Page1View.swift */; };
@@ -65,7 +64,9 @@
 		76C5D8E029D059EB0099692D /* DescriptionPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C5D8DF29D059EB0099692D /* DescriptionPage2.swift */; };
 		76C5D8E229D05DB90099692D /* SizesViewsPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C5D8E129D05DB90099692D /* SizesViewsPage2.swift */; };
 		76C5D8E429D060D00099692D /* ColorPickerPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C5D8E329D060D00099692D /* ColorPickerPage2.swift */; };
-		76C5D8E629D061B00099692D /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C5D8E529D061B00099692D /* ColorHelper.swift */; };
+		76C5D8EC29D17BC30099692D /* Test 1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C5D8EB29D17BC30099692D /* Test 1.swift */; };
+		76C5D8FC29D1D9920099692D /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C5D8FB29D1D9920099692D /* SearchViewModel.swift */; };
+		76C5D8FE29D1E20E0099692D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C5D8FD29D1E20E0099692D /* SearchView.swift */; };
 		76DFA24F29CA4C2A009306B0 /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DFA24E29CA4C2A009306B0 /* SearchItem.swift */; };
 		76F54D2329CA4422004851BE /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F54D2229CA4422004851BE /* Page.swift */; };
 		76F54D2529CA445F004851BE /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F54D2429CA445F004851BE /* ViewRouter.swift */; };
@@ -110,7 +111,6 @@
 		76638C6C29C34DBF002AA82C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		76638C6E29C35275002AA82C /* UsernameRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameRegister.swift; sourceTree = "<group>"; };
 		76638C7029C3537D002AA82C /* EmailRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRegister.swift; sourceTree = "<group>"; };
-		7666FF1429CB4D8E00FEF6C9 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		769E98F029C3574800A6DA4C /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		769E98F229C35EA000A6DA4C /* SignInButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButtonView.swift; sourceTree = "<group>"; };
 		76B8A08B29C9FEDC00B57300 /* Page1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1View.swift; sourceTree = "<group>"; };
@@ -132,7 +132,9 @@
 		76C5D8DF29D059EB0099692D /* DescriptionPage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionPage2.swift; sourceTree = "<group>"; };
 		76C5D8E129D05DB90099692D /* SizesViewsPage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizesViewsPage2.swift; sourceTree = "<group>"; };
 		76C5D8E329D060D00099692D /* ColorPickerPage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerPage2.swift; sourceTree = "<group>"; };
-		76C5D8E529D061B00099692D /* ColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
+		76C5D8EB29D17BC30099692D /* Test 1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test 1.swift"; sourceTree = "<group>"; };
+		76C5D8FB29D1D9920099692D /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		76C5D8FD29D1E20E0099692D /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		76DFA24E29CA4C2A009306B0 /* SearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
 		76F54D2229CA4422004851BE /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		76F54D2429CA445F004851BE /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
@@ -283,7 +285,7 @@
 				76B8A09529CA0AEC00B57300 /* AuthViewModel.swift */,
 				76F54D2429CA445F004851BE /* ViewRouter.swift */,
 				76C5D8BF29CDF26F0099692D /* ImagePicker.swift */,
-				76C5D8E529D061B00099692D /* ColorHelper.swift */,
+				76C5D8FB29D1D9920099692D /* SearchViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -336,9 +338,10 @@
 		76638C6229C34786002AA82C /* Page2 */ = {
 			isa = PBXGroup;
 			children = (
-				76C5D8D829CF757B0099692D /* Description */,
 				76C5D8D029CF305C0099692D /* Page2View.swift */,
+				76C5D8D829CF757B0099692D /* Description */,
 				762E37B929CCDC0A006C8B47 /* PhotoItem */,
+				76C5D8EB29D17BC30099692D /* Test 1.swift */,
 			);
 			path = Page2;
 			sourceTree = "<group>";
@@ -414,7 +417,7 @@
 			isa = PBXGroup;
 			children = (
 				76DFA24E29CA4C2A009306B0 /* SearchItem.swift */,
-				7666FF1429CB4D8E00FEF6C9 /* SearchView.swift */,
+				76C5D8FD29D1E20E0099692D /* SearchView.swift */,
 			);
 			path = SearchItem;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 				7625324E29C463A0004BACB1 /* ProfileView.swift in Sources */,
 				76F54D2529CA445F004851BE /* ViewRouter.swift in Sources */,
 				762E37BD29CCDE31006C8B47 /* PhotoCarousel.swift in Sources */,
+				76C5D8FC29D1D9920099692D /* SearchViewModel.swift in Sources */,
 				7625326A29C4C9B3004BACB1 /* FlashSaleItemView.swift in Sources */,
 				769E98F329C35EA000A6DA4C /* SignInButtonView.swift in Sources */,
 				76C5D8CA29CEFD130099692D /* CarouselSlider.swift in Sources */,
@@ -528,7 +532,6 @@
 				7625325029C463EB004BACB1 /* ProfileImgeView.swift in Sources */,
 				76638C2729C2F9C9002AA82C /* Ecommerce_AppApp.swift in Sources */,
 				76C5D8D529CF32850099692D /* ShareButton.swift in Sources */,
-				7666FF1529CB4D8E00FEF6C9 /* SearchView.swift in Sources */,
 				76638C5E29C31395002AA82C /* Constant.swift in Sources */,
 				76C5D8C229CED3BD0099692D /* RegisterLogInButton.swift in Sources */,
 				762E37B629CCD36B006C8B47 /* Page2Model.swift in Sources */,
@@ -538,13 +541,14 @@
 				76638C7129C3537D002AA82C /* EmailRegister.swift in Sources */,
 				7625325929C4AB1C004BACB1 /* PaymentDetailModel.swift in Sources */,
 				7625325429C47D57004BACB1 /* PaymentDetailStack.swift in Sources */,
+				76C5D8EC29D17BC30099692D /* Test 1.swift in Sources */,
 				76B8A08E29C9FF6D00B57300 /* LatestHeaderView.swift in Sources */,
 				76C5D8DE29D057A30099692D /* NamePriceViewPage2.swift in Sources */,
 				7625325B29C4B11E004BACB1 /* DetailViews.swift in Sources */,
+				76C5D8FE29D1E20E0099692D /* SearchView.swift in Sources */,
 				76638C6929C34B72002AA82C /* PasswordLoginView.swift in Sources */,
 				7625325229C4762C004BACB1 /* UploadItem.swift in Sources */,
 				76C5D8D729CF732C0099692D /* BackButtonPage2.swift in Sources */,
-				76C5D8E629D061B00099692D /* ColorHelper.swift in Sources */,
 				7625326129C4BE6C004BACB1 /* CategoryItem.swift in Sources */,
 				7625325F29C4B8D4004BACB1 /* HeaderPage1View.swift in Sources */,
 				76C5D8D129CF305C0099692D /* Page2View.swift in Sources */,

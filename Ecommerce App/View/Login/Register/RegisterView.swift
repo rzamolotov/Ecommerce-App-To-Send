@@ -10,7 +10,6 @@ import SwiftUI
 struct RegisterView: View {
     
     @State var vm = ViewModel()
-    @State var email: String = ""
     
     var body: some View {
         VStack(alignment: .center){
@@ -21,6 +20,7 @@ struct RegisterView: View {
             VStack{
                 UsernameRegister(firstName: $vm.username, lastName: $vm.lastname)
                     .padding(.bottom, 30)
+                
                 EmailRegister(email: $vm.email)
                     .padding(.bottom, 30)
                 SignInButtonView()
@@ -32,9 +32,9 @@ struct RegisterView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(colorBackground)
-        .alert("Acces denied", isPresented: $vm.invalid) {
-            Button("Dismiss", action: vm.logPressed)
-        }
+//        .alert("Acces denied", isPresented: $vm.invalid) {
+//            Button("Dismiss", action: vm.logPressed)
+//        }
     }
 }
 

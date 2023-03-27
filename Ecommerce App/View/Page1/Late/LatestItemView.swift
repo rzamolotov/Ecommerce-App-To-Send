@@ -15,7 +15,6 @@ struct LatestItemView: View {
         ScrollView(.horizontal) {
             HStack(spacing: 12) {
                 ForEach(network.dataLatest) { late in
-                    
                     NavigationLink(destination: {
                         Page2View()
                     }, label: {

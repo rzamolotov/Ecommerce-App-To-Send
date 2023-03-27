@@ -10,7 +10,7 @@ import SwiftUI
 struct EmailRegister: View {
     @Binding var email: String
     @State private var textEmail: String = ""
-    @State private var isEmailValid: Bool   = true
+    @State private var isEmailValid: Bool = true
     
     var body: some View {
         TextField("Email", text: $email, onEditingChanged: { (isChanged) in

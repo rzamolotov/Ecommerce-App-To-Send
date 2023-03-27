@@ -30,5 +30,6 @@ struct SizesViewsPage2: View {
 struct SizesViewsPage2_Previews: PreviewProvider {
     static var previews: some View {
         SizesViewsPage2()
+            .environmentObject(NetworkItem())
     }
 }

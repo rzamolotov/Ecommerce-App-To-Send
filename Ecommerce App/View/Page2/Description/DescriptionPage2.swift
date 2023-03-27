@@ -24,5 +24,6 @@ struct DescriptionPage2: View {
 struct DescriptionPage2_Previews: PreviewProvider {
     static var previews: some View {
         DescriptionPage2()
+            .environmentObject(NetworkItem())
     }
 }

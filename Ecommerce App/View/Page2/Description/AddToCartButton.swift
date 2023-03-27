@@ -98,5 +98,6 @@ struct AddToCartButton: View {
 struct AddToCartButton_Previews: PreviewProvider {
     static var previews: some View {
         AddToCartButton()
+            .environmentObject(NetworkItem())
     }
 }

@@ -10,14 +10,16 @@ import SwiftUI
 struct LoginButtonView: View {
     @State var vm = ViewModel()
     @EnvironmentObject var viewRouter: ViewRouter
+    @State private var showingAlert = false
     
     var body: some View {
         Button {
-            
+            vm.logIn()
             withAnimation() {
-                vm.authenticated.toggle()
-                if vm.authenticated == true {
+                if vm.authenticated {
                     viewRouter.currentPage = .landing
+                } else {
+                    showingAlert = true
                 }
             }
         } label: {
@@ -31,7 +33,8 @@ struct LoginButtonView: View {
                     .foregroundColor(.white)
                     .padding()
             }
-        }
+        }.alert(isPresented: $showingAlert) {
+            Alert(title: Text("Wrong password or username"), dismissButton: .cancel())}
     }
 }
 
