@@ -10,6 +10,7 @@ import SwiftUI
 struct ColorPickerPage2: View {
     
     @StateObject var viewModel = NetworkItem()
+    @State var selectedColor: String?
     
     var body: some View {
         if let itemModel = viewModel.data {
@@ -21,7 +22,7 @@ struct ColorPickerPage2: View {
                     HStack{
                         ForEach(itemModel.colors, id: \.self) { itemcolor in
                             Button {
-                                //TODO: Create toggle
+                                selectedColor = itemcolor
                             } label: {
                                 ZStack{
                                     Rectangle()
@@ -33,6 +34,10 @@ struct ColorPickerPage2: View {
                                                 .stroke(grayFontColor, lineWidth: 1)
                                         )
                                         .foregroundColor(violetColor)
+                                    if selectedColor == itemcolor {
+                                        Image(systemName: "checkmark")
+                                            .foregroundColor(violetColor)
+                                    }
                                 }
                             }
                         }
@@ -43,6 +48,7 @@ struct ColorPickerPage2: View {
         }
     }
 }
+
 extension Color {
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)

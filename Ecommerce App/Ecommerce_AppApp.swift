@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 @main
 struct Ecommerce_AppApp: App {
     @StateObject var viewRouter = ViewRouter() //changes views e.g. login to home

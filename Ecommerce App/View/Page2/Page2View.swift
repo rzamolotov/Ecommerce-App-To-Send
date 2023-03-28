@@ -11,7 +11,7 @@ struct Page2View: View {
     var body: some View {
         VStack{
             ScrollView {
-                PhotoCarousel()
+                GalleryView()
                 NamePriceViewPage2()
                     .padding(.top, 20)
                     .padding([.leading, .trailing])
