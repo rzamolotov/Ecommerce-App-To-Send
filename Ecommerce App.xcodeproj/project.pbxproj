@@ -42,8 +42,6 @@
 		76638C6D29C34DBF002AA82C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76638C6C29C34DBF002AA82C /* LoginView.swift */; };
 		76638C6F29C35275002AA82C /* UsernameRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76638C6E29C35275002AA82C /* UsernameRegister.swift */; };
 		76638C7129C3537D002AA82C /* EmailRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76638C7029C3537D002AA82C /* EmailRegister.swift */; };
-		766EC04329D2A7D7001B0500 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 766EC04229D2A7D7001B0500 /* FirebaseAuth */; };
-		766EC04529D2A7D7001B0500 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 766EC04429D2A7D7001B0500 /* FirebaseAuthCombine-Community */; };
 		766EC04929D2C121001B0500 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766EC04829D2C121001B0500 /* GalleryView.swift */; };
 		769E98F129C3574800A6DA4C /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E98F029C3574800A6DA4C /* RegisterView.swift */; };
 		769E98F329C35EA000A6DA4C /* SignInButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E98F229C35EA000A6DA4C /* SignInButtonView.swift */; };
@@ -143,8 +141,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				766EC04329D2A7D7001B0500 /* FirebaseAuth in Frameworks */,
-				766EC04529D2A7D7001B0500 /* FirebaseAuthCombine-Community in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,8 +433,6 @@
 			);
 			name = "Ecommerce App";
 			packageProductDependencies = (
-				766EC04229D2A7D7001B0500 /* FirebaseAuth */,
-				766EC04429D2A7D7001B0500 /* FirebaseAuthCombine-Community */,
 			);
 			productName = "Ecommerce App";
 			productReference = 76638C2329C2F9C9002AA82C /* Ecommerce App.app */;
@@ -469,7 +463,6 @@
 			);
 			mainGroup = 76638C1A29C2F9C9002AA82C;
 			packageReferences = (
-				766EC04129D2A7D7001B0500 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 76638C2429C2F9C9002AA82C /* Products */;
 			projectDirPath = "";
@@ -766,30 +759,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		766EC04129D2A7D7001B0500 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		766EC04229D2A7D7001B0500 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 766EC04129D2A7D7001B0500 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		766EC04429D2A7D7001B0500 /* FirebaseAuthCombine-Community */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 766EC04129D2A7D7001B0500 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseAuthCombine-Community";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 76638C1B29C2F9C9002AA82C /* Project object */;
 }
