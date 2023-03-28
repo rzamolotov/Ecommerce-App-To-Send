@@ -10,10 +10,19 @@ import SwiftUI
 struct SignInButtonView: View {
     @State var vm = ViewModel()
     @EnvironmentObject var viewRouter: ViewRouter
+    @State private var showingAlert = false
     
     var body: some View {
         Button(action: {
-            viewRouter.currentPage = .landing
+            vm.registerPressed()
+            if vm.authenticated == true {
+                vm.sampleUsername = ""
+                vm.sampleUsername = vm.username
+                print("sampleusername is\(vm.sampleUsername)")
+                viewRouter.currentPage = .landing
+            } else {
+                showingAlert = true
+            }
         }) {
             ZStack{
                 Rectangle()
@@ -25,7 +34,8 @@ struct SignInButtonView: View {
                     .foregroundColor(.white)
                     .padding()
             }
-        }
+        }.alert(isPresented: $showingAlert) {
+            Alert(title: Text("This username already exists"), dismissButton: .cancel())}
     }
 }
 

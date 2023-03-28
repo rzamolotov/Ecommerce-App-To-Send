@@ -24,6 +24,7 @@ struct EmailRegister: View {
             }
         })
         .font(.custom(lightFont, size: 14))
+        .foregroundColor(blackColor)
         .padding()
         .background(grayBackgroundColor)
         .frame(width: 289, height: 29)

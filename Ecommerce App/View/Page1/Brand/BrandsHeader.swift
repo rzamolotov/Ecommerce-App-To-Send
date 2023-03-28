@@ -16,8 +16,8 @@ struct BrandsHeader: View {
                 ForEach(network.dataLatest) { late in
                     AsyncImage(url: URL(string: late.image_url)) { image in
                         image.resizable()
+                            .aspectRatio(contentMode: .fill)
                             .frame(width: 114, height: 149)
-                            .scaledToFill()
                             .cornerRadius(10)
                     } placeholder: {
                         ProgressView()

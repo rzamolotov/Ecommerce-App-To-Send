@@ -32,9 +32,6 @@ struct RegisterView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(colorBackground)
-//        .alert("Acces denied", isPresented: $vm.invalid) {
-//            Button("Dismiss", action: vm.logPressed)
-//        }
     }
 }
 

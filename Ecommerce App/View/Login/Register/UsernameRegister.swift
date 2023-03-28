@@ -17,6 +17,7 @@ struct UsernameRegister: View {
         VStack{
             TextField("First name", text: $firstName)
                 .font(.custom(lightFont, size: 14))
+                .foregroundColor(blackColor)
                 .padding()
                 .background(grayBackgroundColor)
                 .frame(width: 289, height: 29)
@@ -25,11 +26,13 @@ struct UsernameRegister: View {
             
             TextField("Last name", text: $lastName)
                 .font(.custom(lightFont, size: 14))
+                .foregroundColor(blackColor)
                 .padding()
                 .background(grayBackgroundColor)
                 .frame(width: 289, height: 29)
                 .cornerRadius(15.0)
         }
+       
     }
 }
 

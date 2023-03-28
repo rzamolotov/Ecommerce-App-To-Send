@@ -12,8 +12,9 @@ struct DescriptionPage2: View {
     
     var body: some View {
         if let itemModel = viewModel.data {
-            HStack{
+            HStack {
                 Text(itemModel.description)
+                Spacer()
             }
             .foregroundColor(grayFontColor)
         .font(.custom(lightFont, size: 12))

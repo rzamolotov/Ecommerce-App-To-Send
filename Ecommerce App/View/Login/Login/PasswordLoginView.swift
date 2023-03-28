@@ -20,12 +20,14 @@ struct PasswordLoginView: View {
             }
         }
         .font(.custom(lightFont, size: 14))
+        .foregroundColor(blackColor)
         .padding()
         .background(grayBackgroundColor)
         .frame(width: 289, height: 29)
         .cornerRadius(15.0)
         .overlay(alignment: .trailing) {
             Image(systemName: isSecureField ? "eye.slash" : "eye")
+                .padding()
                 .foregroundColor(blackColor)
                 .onTapGesture {
                     isSecureField.toggle()

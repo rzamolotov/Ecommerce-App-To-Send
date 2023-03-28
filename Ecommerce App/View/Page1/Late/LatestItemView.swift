@@ -21,9 +21,8 @@ struct LatestItemView: View {
                         ZStack{
                             AsyncImage(url: URL(string: late.image_url)) { image in
                                 image.resizable()
-                                    .frame(width: 114, height: 149)
-                                    .scaledToFill()
                                     .aspectRatio(contentMode: .fill)
+                                    .frame(width: 114, height: 149)
                                     .cornerRadius(10)
                             } placeholder: {
                                 ProgressView()

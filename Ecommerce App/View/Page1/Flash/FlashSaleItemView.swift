@@ -23,9 +23,8 @@ struct FlashSaleItemView: View {
                             AsyncImage(url: URL(string: flash.image_url)) { image in
                                 image
                                     .resizable()
-                                    .aspectRatio(contentMode: .fit)
+                                    .aspectRatio(contentMode: .fill)
                                     .frame(width: 174, height: 221)
-                                    .scaledToFill()
                                     .cornerRadius(10)
                             } placeholder: {
                                 ProgressView()

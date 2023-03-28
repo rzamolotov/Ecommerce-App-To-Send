@@ -12,7 +12,7 @@ struct UsernameLoginView: View {
     
     var body: some View {
         TextField("First Name", text: $username)
-            
+            .foregroundColor(blackColor)
             .font(.custom(lightFont, size: 14))
             .padding()
             .background(grayBackgroundColor)

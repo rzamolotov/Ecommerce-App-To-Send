@@ -10,14 +10,14 @@ import SwiftUI
 struct SearchItem: View {
     
     @Binding var searchText: String
-    @ObservedObject var searchVM = SearchViewModel()
     @State private var filteredData: [String] = []
 
     
     var body: some View {
         TextField("What are you looking for?", text: $searchText)
             .padding(7)
-            .background(Color(.systemGray6))
+            .background(grayBackgroundColor)
+            .foregroundColor(grayFontColor)
             .cornerRadius(8)
             .transition(.move(edge: .bottom))
             .onTapGesture {
@@ -27,7 +27,7 @@ struct SearchItem: View {
                 HStack{
                     Spacer()
                     Image(systemName: "x.circle.fill")
-                        .foregroundColor(grayFontColor)
+                        .foregroundColor(blackColor)
                         .padding()
                         .opacity(searchText.isEmpty ? 0.0 : 1.0)
                         .onTapGesture {

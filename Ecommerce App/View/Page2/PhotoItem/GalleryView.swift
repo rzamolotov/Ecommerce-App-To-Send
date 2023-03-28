@@ -21,7 +21,7 @@ struct GalleryView: View {
                             image
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
-                                .frame(width: 320, height: 360)
+                                .frame(width: UIScreen.main.bounds.width / 1.1, height: 360)
                                 .cornerRadius(10)
                                 .gesture(
                                     DragGesture()
@@ -42,22 +42,19 @@ struct GalleryView: View {
                         HStack{
                             Spacer()
                             ShareButton()
-                                .padding(.trailing, 50)
+                                .padding(.trailing, 30)
                         }
                     }
                 
-                
                 ScrollView(.horizontal, showsIndicators: false) {
-                    
                    
                         HStack(spacing: 20) {
-                            Spacer()
                             ForEach(images.indices, id: \.self) { index in
                                 AsyncImage(url: URL(string: images[index])) { image in
                                     image
                                         .resizable()
-                                        .frame(width: 67, height: 38)
                                         .aspectRatio(contentMode: .fill)
+                                        .frame(width: 67, height: 38)
                                         .cornerRadius(10)
                                         .shadow(radius: index == selectedImageIndex ? 3 : 0)
                                         .scaleEffect(index == selectedImageIndex ? 1.5 : 1.0)

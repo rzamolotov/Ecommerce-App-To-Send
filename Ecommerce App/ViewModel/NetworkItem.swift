@@ -35,4 +35,5 @@ class NetworkItem: ObservableObject {
             }
         }.resume()
     }
+    
 }

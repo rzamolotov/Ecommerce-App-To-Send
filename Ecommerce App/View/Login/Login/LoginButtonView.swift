@@ -16,7 +16,7 @@ struct LoginButtonView: View {
         Button {
             vm.logIn()
             withAnimation() {
-                if vm.authenticated {
+                if vm.authenticated == true {
                     viewRouter.currentPage = .landing
                 } else {
                     showingAlert = true

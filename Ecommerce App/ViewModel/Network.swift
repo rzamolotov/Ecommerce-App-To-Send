@@ -15,6 +15,7 @@ class Network: ObservableObject {
     @Published var dataFlash = [FlashSale]()
     @Published var dataLatest = [Latest]()
     @Published var isLoading = true
+    @Published var searchQuery = ""
     
     init() {
         self.fetchFlash()
@@ -63,5 +64,17 @@ class Network: ObservableObject {
                 }
             }
         }.resume()
+    }
+    
+    func filterLatest() -> [Latest] {
+        guard !searchQuery.isEmpty else {
+            return dataLatest
+        }
+        
+        let filteredData = dataLatest.filter { item in
+            return item.name.lowercased().contains(searchQuery.lowercased())
+        }
+        print(filteredData)
+        return filteredData
     }
 }
